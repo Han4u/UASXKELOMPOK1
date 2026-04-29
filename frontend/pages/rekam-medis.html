@@ -1,0 +1,57 @@
+<div class="form-section">
+    <h2>Tambah Rekam Medis Baru</h2>
+    <form id="form-rekam-medis">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="patient_id">Pasien *</label>
+                <select id="patient_id" name="patient_id" required>
+                    <option value="">-- Pilih Pasien --</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="doctor_id">Dokter *</label>
+                <select id="doctor_id" name="doctor_id" required>
+                    <option value="">-- Pilih Dokter --</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="diagnosis">Diagnosis *</label>
+            <textarea id="diagnosis" name="diagnosis" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="treatment">Pengobatan *</label>
+            <textarea id="treatment" name="treatment" required></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="visit_date">Tanggal Kunjungan *</label>
+                <input type="date" id="visit_date" name="visit_date" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="notes">Catatan</label>
+            <textarea id="notes" name="notes" style="min-height: 80px;"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Tambah Rekam Medis</button>
+    </form>
+</div>
+
+<div class="table-section">
+    <h2>Daftar Rekam Medis</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Pasien ID</th>
+                <th>Dokter ID</th>
+                <th>Diagnosis</th>
+                <th>Tanggal Kunjungan</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="rekam-medis-tbody">
+            <tr><td colspan="6" class="empty-message">Loading...</td></tr>
+        </tbody>
+    </table>
+</div>
