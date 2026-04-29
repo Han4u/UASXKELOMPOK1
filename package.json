@@ -1,0 +1,13 @@
+{
+  "name": "healthcare-system",
+  "version": "1.0.0",
+  "description": "Smart Healthcare System - Microservices Architecture",
+  "private": true,
+  "workspaces": [
+    "api_Gateway",
+    "consultation_service",
+    "doctor_service",
+    "medical_record_service",
+    "patient_service"
+  ]
+}
